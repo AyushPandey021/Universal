@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import '../index.css'
 export default function MedicapsLandingPage() {
   return (
-    <div className="min-h-screen bg-white  ">
+    <div className="min-h-screen bg-[#9CF6FB]  ">
       {/* Navbar */}
       <nav className="flex justify-between items-center px-8 py-4 shadow">
         <div className="text-2xl font-bold ">
@@ -21,8 +21,8 @@ export default function MedicapsLandingPage() {
   <li><Link to="/contact">Contact</Link></li>
         </ul>
         <div className="flex gap-3">
-          <button className="bg-blue-100 text-blue-900 px-4 py-1 rounded hover:cursor-pointer">Admissions</button>
-          <button className="bg-blue-600 text-white px-4 py-1 rounded hover:cursor-pointer">Apply Now</button>
+          <button className="bg-blue-100 text-blue-900 px-4 py-1 rounded hover:cursor-pointer">signup </button>
+          <button className="bg-blue-600 text-white px-4 py-1 rounded hover:cursor-pointer">Login </button>
         </div>
       </nav>
 
