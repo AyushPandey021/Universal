@@ -3,7 +3,7 @@ export default function Courses() {
   const navigate = useNavigate()
     const courses = [
       {
-        title: "BACHERLOR'S IN COMPUTER ACADEMY",
+        title: "BCA",
         tags: ["ON CAMPUS", "HINDI + ENGLISH"],
         price: 36000,
         oldPrice: 49000,
@@ -13,7 +13,7 @@ export default function Courses() {
         id : 'Bca-details'
       },
       {
-        title: "DIPLOMA IN COMPUTER APLICATION",
+        title: "DCA",
         tags: ["ON CAMPUS","HINDI + ENGLISH"],
         price: 36000,
         oldPrice: 4000,
@@ -23,7 +23,7 @@ export default function Courses() {
         id:'Dca-details'
       },
       {
-        title: "Post Graduate Diploma in Computer Application.",
+        title: "PGDCA",
         tags: ["ON CAMPUS","HINDI + ENGLISH"],
         price: 36000,
         oldPrice: 49000,
@@ -33,7 +33,7 @@ export default function Courses() {
         id:'Pgdca-details'
       },
       {
-        title: "Post Graduate Diploma in Computer Application.",
+        title: "PGDCA",
         tags: ["ON CAMPUS","HINDI + ENGLISH"],
         price: 36000,
         oldPrice: 49000,
