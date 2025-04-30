@@ -32,6 +32,16 @@ export default function Courses() {
         image: "https://imgs.search.brave.com/u-PzClkofDHSaphmUaGgy0JdY7fQYYyAnvpkOWHahVY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2Rk/ZS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjEvMDMvUEct/RGlwbG9tYS1pbi1D/b21wdXRlci1BcHBs/aWNhdGlvbi1EaXN0/YW5jZS1MZWFybmlu/Zy5qcGc",
         id:'Pgdca-details'
       },
+      {
+        title: "Post Graduate Diploma in Computer Application.",
+        tags: ["ON CAMPUS","HINDI + ENGLISH"],
+        price: 36000,
+        oldPrice: 49000,
+        discount: "50% OFF",
+        badge: "2 YEARS",
+        image: "https://imgs.search.brave.com/u-PzClkofDHSaphmUaGgy0JdY7fQYYyAnvpkOWHahVY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2Rk/ZS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjEvMDMvUEct/RGlwbG9tYS1pbi1D/b21wdXRlci1BcHBs/aWNhdGlvbi1EaXN0/YW5jZS1MZWFybmlu/Zy5qcGc",
+        id:'Pgdca-details'
+      },
     ];
   
     return (
@@ -42,7 +52,7 @@ export default function Courses() {
       <div className="bg-[#9cf6fb] min-h-screen  py-10 px-4">
         <img src='' alt="" />
         <h2 className="text-2xl font-semibold mb-6 mt-[2vw]">Courses which do work ↓</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 h-[35vw]  w-[90vw] mx-[5vw]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16  w-[90vw] mx-[5vw]">
           {courses.map((course, index) => (
             <div key={index} className="bg-[#ffffffc2] rounded-xl overflow-hidden shadow-lg">
               <div className="relative">
@@ -67,13 +77,16 @@ export default function Courses() {
                   </div>
                   <span className="bg-white text-black text-sm px-2 py-1 rounded">{course.discount}</span>
                 </div>
-                <button onClick={() => navigate(`/courses/${course.id}`)} className="w-full bg-teal-400 text-black font-semibold py-2 rounded mt-8  hover:bg-teal-300">
+                
+              </div>
+              <button onClick={() => navigate(`/courses/${course.id}`)} className="w-full bg-teal-400 text-black font-semibold py-2 rounded mt-8  hover:bg-teal-300">
                   View Details
                 </button>
-              </div>
             </div>
+            
           ))}
         </div>
+        
       </div>
       </>
     );
