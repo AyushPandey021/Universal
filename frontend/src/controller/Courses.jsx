@@ -62,7 +62,7 @@ export default function Courses() {
                 </span>
               </div>
               <div className="p-4">
-                <h3 className="font-bold text-lg mb-2 mt-4 uppercase">{course.title}</h3>
+                <h3 className="font-bold text-3xl tracking-wider text-gray-700 mb-2 mt-4 uppercase">{course.title}</h3>
                 <div className="flex gap-2 mb-4">
                   {course.tags.map((tag, i) => (
                     <span key={i} className="bg-gray-700 text-white text-sm px-2 py-1 rounded">
