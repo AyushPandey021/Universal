@@ -10,21 +10,22 @@ export default function MedicapsLandingPage() {
       {/* Navbar */}
       <nav className="flex justify-between items-center px-8 py-4 shadow">
         <div className="text-2xl font-bold ">
-        <span id="U" className="Uca">UNIVERSAL</span>{' '}
-<span className="Uca text-blue-900 ">
-  COMPUTER ACADEMY
-</span>
+          <span id="U" className="Uca">UNIVERSAL</span>{' '}
+          <span className="Uca text-blue-900 ">
+            COMPUTER ACADEMY
+          </span>
 
         </div>
         <ul className="hidden md:flex gap-6 text-blue-900 font-medium hover:cursor-pointer" >
-         <li><Link to="/">Home</Link></li>
-  <li><Link to="/about">About</Link></li>
-  <li><Link to="/courses">Courses</Link></li>
-  <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/courses">Courses</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/Gallary">Gallary</Link></li>
         </ul>
         <div className="flex gap-3">
-        <Link to='/signup'><button className="bg-blue-100 text-blue-900 px-4 py-1 rounded hover:cursor-pointer">signup </button></Link>
-        <Link to='/login'><button className="bg-blue-600 text-white px-4 py-1 rounded hover:cursor-pointer">Login </button></Link>
+          <Link to='/signup'><button className="bg-blue-100 text-blue-900 px-4 py-1 rounded hover:cursor-pointer">signup </button></Link>
+          <Link to='/login'><button className="bg-blue-600 text-white px-4 py-1 rounded hover:cursor-pointer">Login </button></Link>
         </div>
       </nav>
 
@@ -43,20 +44,24 @@ export default function MedicapsLandingPage() {
         </div>
 
         <div className="md:w-1/2 relative">
-          <img 
-            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-            alt="" 
+          <img
+            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
             className="rounded-[100px_0px_100px_0px] shadow-lg"
           />
-       
+
         </div>
       </div>
 
 
+<<<<<<< HEAD
       <CollegePage/>
       <Testimonials/>
       <SocialWall/>
     
+=======
+
+>>>>>>> a5219bc (gallary)
     </div>
   );
 }
