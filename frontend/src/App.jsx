@@ -5,6 +5,9 @@ import Testimonials from './controller/Testomonal'
 import ContactPage from './controller/ContactPage'
 import Home from './controller/Home'
 import Courses from './controller/Courses';
+import SignUp from './Auth/Signup';
+import Login from './Auth/Login';
+
 const App = () => {
   return (
     <div>  
@@ -14,7 +17,8 @@ const App = () => {
     <Route  path='/testimonials'  element={<Testimonials/>}></Route>
     <Route  path='/socialwall'  element={<SocialWall  />}></Route>
     <Route  path='/Courses'  element={<Courses  />}></Route>
-  
+    <Route  path='/signup'  element={<SignUp  />}></Route>
+    <Route  path='/login'  element={<Login  />}></Route>
   </Routes>
     </div>
   )

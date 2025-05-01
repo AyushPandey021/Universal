@@ -21,8 +21,8 @@ export default function MedicapsLandingPage() {
   <li><Link to="/contact">Contact</Link></li>
         </ul>
         <div className="flex gap-3">
-          <button className="bg-blue-100 text-blue-900 px-4 py-1 rounded hover:cursor-pointer">signup </button>
-          <button className="bg-blue-600 text-white px-4 py-1 rounded hover:cursor-pointer">Login </button>
+        <Link to='/signup'><button className="bg-blue-100 text-blue-900 px-4 py-1 rounded hover:cursor-pointer">signup </button></Link>
+        <Link to='/login'><button className="bg-blue-600 text-white px-4 py-1 rounded hover:cursor-pointer">Login </button></Link>
         </div>
       </nav>
 
