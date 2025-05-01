@@ -28,7 +28,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="bg-gradient-to-r from-purple-900 to-indigo-900 text-white py-12 px-4 text-center">
+    <div className="bg-[#12153f] text-white py-12 px-4 text-center">
       <h2 className="text-2xl font-bold mb-10">
         <span className="bg-blue-500 px-3 py-1 rounded">Testimonials</span>
       </h2>

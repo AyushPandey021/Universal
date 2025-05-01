@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-
+import CollegePage from "./CollegePage";
+import SocialWall from "./SocialWall";
+import Testimonials from "./Testomonal";
 import '../index.css'
 export default function MedicapsLandingPage() {
   return (
@@ -51,6 +53,9 @@ export default function MedicapsLandingPage() {
       </div>
 
 
+      <CollegePage/>
+      <Testimonials/>
+      <SocialWall/>
     
     </div>
   );

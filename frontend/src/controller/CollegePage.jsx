@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 
 import academyLogo from '../assets/univarsal.png';
 import academyLogo1 from '../assets/clg4.jpg';
-import academyLogo8 from '../assets/clg8.jpg';
 import academyLogo2 from '../assets/clg7.jpg';
 import academyLogo3 from '../assets/clg2.jpg';
 import academyLogo4 from '../assets/clg1.jpg';
@@ -43,9 +42,9 @@ const images = [
 
 const CollegePage = () => {
   return (
-    <div className="flex flex-col md:flex-row min-h-full bg-gray-100 p-4">
+    <div className="flex flex-col md:flex-row min-h-full bg-[#9CF6FB] p-4">
       {/* Left Side: About College */}
-      <div className="md:w-1/2 flex flex-col justify-center items-center bg-white p-6 shadow-lg rounded-2xl bg-contain">
+      <div className="md:w-1/2 flex flex-col justify-center items-center bg-[#9CF6FB] p-6 shadow-lg rounded-2xl bg-contain">
         <img
           src={academyLogo}
           alt="College"
@@ -76,7 +75,7 @@ const CollegePage = () => {
             alt={img.text}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+          <div className="absolute inset-0 bg-transparent  bg-opacity-50  group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
             <p className="text-white text-2xl font-semibold text-center px-4">{img.text}</p>
           </div>
         </div>
