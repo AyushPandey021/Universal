@@ -7,7 +7,8 @@ import Home from './controller/Home'
 import Courses from './controller/Courses';
 import SignUp from './Auth/Signup';
 import Login from './Auth/Login';
-import Gallery from './controller/Gallery';
+
+import PhotoGallery from './controller/PhotoGallery';
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
     <Route  path='/Courses'  element={<Courses  />}></Route>
     <Route  path='/signup'  element={<SignUp  />}></Route>
     <Route  path='/login'  element={<Login  />}></Route>
-    <Route  path='/Gallary'  element={<Gallery  />}></Route>
+    <Route  path='/Gallary'  element={<PhotoGallery  />}></Route>
   </Routes>
     </div>
   )

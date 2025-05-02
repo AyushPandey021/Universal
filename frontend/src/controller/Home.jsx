@@ -54,14 +54,9 @@ export default function MedicapsLandingPage() {
       </div>
 
 
-<<<<<<< HEAD
-      <CollegePage/>
-      <Testimonials/>
-      <SocialWall/>
-    
-=======
 
->>>>>>> a5219bc (gallary)
+    
+
     </div>
   );
 }
