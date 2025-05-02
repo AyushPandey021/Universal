@@ -1,6 +1,5 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 export default function Courses() {
-  const navigate = useNavigate()
     const courses = [
       {
         title: "BCA",
@@ -46,10 +45,6 @@ export default function Courses() {
   
     return (
       <>
-
-
-
-
       <div className="bg-[#9cf6fb] min-h-screen  py-10 px-4">
         <img src='' alt="Universal" />
         <h2 className="text-2xl font-semibold mb-6 mt-[2vw]">Courses which do work ↓</h2>
@@ -80,14 +75,14 @@ export default function Courses() {
                 </div>
                 
               </div>
-              <button onClick={() => navigate(`/courses/${course.id}`)} className="w-full bg-teal-400 text-black font-semibold py-2 rounded mt-8  hover:bg-teal-300">
+              <Link path='/enrollment'>
+              <button  className="w-full bg-teal-400 text-black font-semibold py-2 rounded mt-8  hover:bg-teal-300">
                   View Details
                 </button>
+              </Link>
             </div>
-            
           ))}
         </div>
-        
       </div>
       </>
     );
