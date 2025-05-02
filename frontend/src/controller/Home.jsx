@@ -3,12 +3,22 @@ import { Link } from 'react-router-dom';
 import CollegePage from "./CollegePage";
 import SocialWall from "./SocialWall";
 import Testimonials from "./Testomonal";
+import bgvideo from '../assets/uca-video.mp4';
 import '../index.css'
 export default function MedicapsLandingPage() {
   return (
-    <div className="min-h-screen bg-[#9CF6FB]  ">
-      {/* Navbar */}
-      <nav className="flex justify-between items-center px-8 py-4 shadow">
+    <div className="min-h-screen   ">
+   <video
+  autoPlay
+  muted
+  loop
+  className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+>
+  <source src={bgvideo} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+<div className="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-0"></div>
+<nav className="fixed top-0 left-0 w-full z-10 flex justify-between items-center px-8 py-4 bg-white/30 backdrop-blur-md shadow text-white">
         <div className="text-2xl font-bold ">
           <span id="U" className="Uca">UNIVERSAL</span>{' '}
           <span className="Uca text-blue-900 ">
@@ -30,12 +40,15 @@ export default function MedicapsLandingPage() {
       </nav>
 
       {/* Main Section */}
-      <div className="flex flex-col md:flex-row items-center px-8 py-16 gap-10">
-        <div className="md:w-1/2 space-y-6 mt-[9vw] px-[5vw]">
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-900">
-            Enroll to Join the Ranks of Excellence
-          </h1>
-          <p className="text-gray-700">Find Your Study Options at UCA</p>
+
+      <div className="pt-32 flex flex-col md:flex-row items-center px-8 pb-20 gap-10 h-[48vw] ">
+
+        <div className="md:w-1/2 space-y-6  px-[5vw]">
+        <h1 className="text-4xl md:text-5xl font-bold text-white">
+  Enroll to Join the Ranks of Excellence
+</h1>
+<p className="text-white">Find Your Study Options at UCA</p>
+
           <div className="flex gap-4 flex-wrap">
             <button className="border border-red-800 text-red-800 px-4 py-2 rounded hover:cursor-pointer">UNDERGRADUATE</button>
             <button className="border border-red-800 text-red-800 px-4 py-2 rounded hover:cursor-pointer">POSTGRADUATE</button>
@@ -45,7 +58,7 @@ export default function MedicapsLandingPage() {
 
         <div className="md:w-1/2 relative">
           <img
-            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src=""
             alt=""
             className="rounded-[100px_0px_100px_0px] shadow-lg"
           />
@@ -54,14 +67,11 @@ export default function MedicapsLandingPage() {
       </div>
 
 
-<<<<<<< HEAD
       <CollegePage/>
       <Testimonials/>
       <SocialWall/>
     
-=======
 
->>>>>>> a5219bc (gallary)
     </div>
   );
 }

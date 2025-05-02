@@ -42,7 +42,7 @@ const images = [
 
 const CollegePage = () => {
   return (
-    <div className="flex flex-col md:flex-row min-h-full bg-[#9CF6FB] p-4">
+    <div className="flex flex-col md:flex-row min-h-full bg-[#9CF6FB] p-16 ">
       {/* Left Side: About College */}
       <div className="md:w-1/2 flex flex-col justify-center items-center bg-[#9CF6FB] p-6 shadow-lg rounded-2xl bg-contain">
         <img
