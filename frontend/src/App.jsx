@@ -9,6 +9,7 @@ import SignUp from './Auth/Signup';
 import Login from './Auth/Login';
 
 import PhotoGallery from './controller/PhotoGallery';
+import EnrollForm from './controller/EnrollForm';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
     <Route  path='/signup'  element={<SignUp  />}></Route>
     <Route  path='/login'  element={<Login  />}></Route>
     <Route  path='/Gallary'  element={<PhotoGallery  />}></Route>
+    <Route  path='/enrollment'  element={<EnrollForm  />}></Route>
   </Routes>
     </div>
   )
