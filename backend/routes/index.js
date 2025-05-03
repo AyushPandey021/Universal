@@ -2,12 +2,14 @@ var express = require('express');
 var router = express.Router();
 var dbConnection = require('../config/Db')
 dbConnection()
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('signup')
-});
-router.get('/login', function(req, res, next) {
-  res.render('login')
-});
+const dbCreation = require('../config/DbCreation')
+const controllers = require('../controllers/User')
 
+
+/* GET home page. */  
+
+
+router.post("/profile", dbCreation.signup);
+router.get("/signup", controllers.signup);
+router.get("/login", controllers.login);
 module.exports = router;

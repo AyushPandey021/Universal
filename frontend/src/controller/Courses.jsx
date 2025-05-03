@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 export default function Courses() {
+
     const courses = [
       {
         title: "BCA",
@@ -75,11 +76,11 @@ export default function Courses() {
                 </div>
                 
               </div>
-              <Link path='/enrollment'>
-              <button  className="w-full bg-teal-400 text-black font-semibold py-2 rounded mt-8  hover:bg-teal-300">
+              <Link to="/enrollment">              <button  className="w-full bg-teal-400 text-black font-semibold py-2 rounded mt-8  hover:bg-teal-300">
                   View Details
                 </button>
-              </Link>
+                </Link>
+
             </div>
           ))}
         </div>

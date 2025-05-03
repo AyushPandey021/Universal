@@ -26,7 +26,7 @@ export default function MedicapsLandingPage() {
           </span>
 
         </div>
-        <ul className="hidden md:flex gap-6 text-blue-900 font-medium hover:cursor-pointer" >
+        <ul className="hidden md:flex gap-6 text-white font-medium hover:cursor-pointer" >
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/courses">Courses</Link></li>
