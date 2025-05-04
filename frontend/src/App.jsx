@@ -8,6 +8,7 @@ import Login from './Auth/Login';
 
 import PhotoGallery from './controller/PhotoGallery';
 import EnrollForm from './controller/EnrollForm';
+import About from './controller/About';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
     <Route  path='/login'  element={<Login  />}></Route>
     <Route  path='/Gallary'  element={<PhotoGallery  />}></Route>
     <Route  path='/enrollment'  element={<EnrollForm  />}></Route>
+    <Route  path='/about'  element={<About  />}></Route>
   </Routes>
     </div>
   )
