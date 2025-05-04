@@ -5,25 +5,42 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 // import '../controller/'; // optional custom CSS
 
+import t1 from '../assets/15.jpg';
+import t2 from '../assets/14.jpg';
+import t3 from '../assets/imp.png';
+import t4 from '../assets/t4.jpg';
+import t5 from '../assets/t5.jpg';
+
 const testimonials = [
   {
     id: 1,
-    name: 'Kumkum Maurya',
+    name: 'Tanisq Sonwane',
     quote: 'My experience at Medicaps University has been truly amazing. The supportive faculty, quality education...',
-    image: '/images/kumkum.jpg'
+    image: t1
   },
   {
     id: 2,
-    name: 'Raj Patel',
+    name: 'Lacksya Bhagat',
     quote: 'Medicaps helped me grow personally and professionally. Grateful for the environment and mentors.',
-    image: '/images/raj.jpg'
+    image: t3
   },
   {
     id: 3,
-    name: 'Sneha Singh',
+    name: 'Ayush Pandey',
     quote: 'The labs, faculty, and opportunities are truly unmatched. Proud to be part of this university.',
-    image: '/images/sneha.jpg'
+    image: t2},
+  {
+    id: 4,
+    name: 'Gorav Raghuwanshi',
+    quote: 'UCA didn’t just teach me subjects — it shaped my future. The faculty here truly care about each student’s journey.',
+    image: t4
   },
+  {
+    id: 5,
+    name: 'Nikki Thakur',
+    quote: '“From zero to confident — my transformation began the day I joined UCA. The practical learning environment helped me build real skills',
+    image: t5
+  }
 ];
 
 const Testimonials = () => {
